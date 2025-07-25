@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructor Persona Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7faff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: transparent;
+      width: 300px;
+      height: 400px;
+      margin: 15px;
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card-front {
+      background-color: #ffffff;
+      color: #333;
+      flex-direction: column;
+    }
+
+    .card-front h2 {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .card-back {
+      background-color: #e3f2fd;
+      color: #000;
+      transform: rotateY(180deg);
+      font-size: 16px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Minerva McGonagall</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Traditional, sharp, no-nonsense.<br><br>
+          <strong>Challenge:</strong><br>
+          “It’s important for students to get in the library. How will they do that with online tutorials?”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Ted Lasso</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Warm, enthusiastic, not very tech-savvy.<br><br>
+          <strong>Challenge:</strong><br>
+          “How will I know my students took it?”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Temperance Brennan</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Analytical, skeptical of simplified content.<br><br>
+          <strong>Challenge:</strong><br>
+          “Tutorials are boring and easy to fast-forward through.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Jessica Day</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Quirky and supportive, prioritizes emotional connection.<br><br>
+          <strong>Challenge:</strong><br>
+          “It’s important for students to know a librarian.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Walter White</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Precise, confident, used to control.<br><br>
+          <strong>Challenge:</strong><br>
+          “Can I use the classroom if I want to teach the session myself?”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Moira Rose</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Dramatic, distrustful of digital content.<br><br>
+          <strong>Challenge:</strong><br>
+          “Online courses often miss library instruction.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Yoda</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Wise, philosophical, favors depth.<br><br>
+          <strong>Challenge:</strong><br>
+          “Workshops are jam-packed. You’re sacrificing depth for breadth.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Barbie</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Idealistic and equity-minded.<br><br>
+          <strong>Challenge:</strong><br>
+          “Are these tutorials accessible?”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Sheldon Cooper</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Literal, detail-focused, dislikes inconsistency.<br><br>
+          <strong>Challenge:</strong><br>
+          “Students had very different experiences learning foundational skills.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <div>INSERT IMAGE HERE</div>
+        <h2>Lorelai Gilmore</h2>
+      </div>
+      <div class="card-back">
+        <div>
+          <strong>Personality:</strong> Chatty, cares about community.<br><br>
+          <strong>Challenge:</strong><br>
+          “It’s important for students to know a librarian.”
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
